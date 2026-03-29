@@ -30,7 +30,7 @@
         <section id="form-pedido">
             <h1>Realizar pedido</h1>
 
-            <form action="">
+            <form action="procesar.php">
 
                 <fieldset>
                     <legend>Datos Personales</legend>
@@ -51,7 +51,7 @@
                     <label for="servicio">Seleccioná un servicio:</label>
                     
                     <select name="servicio" id="servicio" required>    
-                        <option disabled selected>Selecciona una opción</option>
+                        <option value="" disabled selected>Selecciona una opción</option>
                         <option value="venta-juegos">Venta de Juegos</option>
                         <option value="soporte-tecnico">Soporte Técnico</option>
                         <option value="comunidad">Comunidad y foros</option>
@@ -67,17 +67,46 @@
                     <input type="radio" name="plataforma" id="pc" value="pc" required>
                     <label for="pc">PC / Windows</label>
                     
-                    <input type="radio" name="plataforma" id="mac" value="mac" required>
+                    <input type="radio" name="plataforma" id="mac" value="mac">
                     <label for="mac">Mac</label>
 
                     <input type="radio" name="plataforma" id="linux" value="linux">
                     <label for="linux">Linux</label>
                 </fieldset>
 
-            </form>
+                <fieldset>
+                    <legend>¿Qué géneros te interesan?</legend>
 
+                    <input type="checkbox" name="genero" id="accion" value="accion">
+                    <label for="accion">Acción</label>
+
+                    <input type="checkbox" name="genero" id="rpg" value="rpg">
+                    <label for="rpg">RPG</label>
+
+                    <input type="checkbox" name="genero" id="estrategia" value="estrategia">
+                    <label for="estrategia">Estrategia</label>
+
+                    <input type="checkbox" name="genero" id="simulacion" value="simulacion">
+                    <label for="simulacion">Simulación</label>
+
+                    <input type="checkbox" name="genero" id="aventura" value="aventura">
+                    <label for="aventura">Aventura</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+
+                    <label for="comentarios">Contanos más sobre tu pedido:</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" rows="5" placeholder="Ej: Busco juegos cooperativos para jugar con amigos..."></textarea>
+                </fieldset>
+                
+                <div class="form-botones">
+                    <button type="submit">Enviar pedido</button>
+                    <button type="reset">Limpiar formularios</button>
+                </div>
+            </form>
         </section>
     </main>
-
 </body>
 </html>
