@@ -7,6 +7,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* CSS de la seccion "Header" */
+
 header {
     background-color: #2a475e;
     padding-left: 10px;
@@ -19,8 +23,6 @@ header {
     color: #dddddd;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 nav a {
     color: #dddddd;
@@ -41,3 +43,100 @@ nav a.activo {
     color: #79afff;
 }
 
+
+/* CSS de la seccion "Form" */
+
+.contacto_dudas {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contacto_respondemos {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #64829c;
+    margin-bottom: 30px;
+}
+
+.contacto_formulario {
+    padding: 60px 60px;
+    max-width: 545px;
+    margin: auto;
+    margin-top: 45px;
+    background-color: #1b2838;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000080;
+}
+
+.nombre {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.apellido {
+    display: inline-block;
+}
+
+label {
+    display: block;
+    color: #c7d5e0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3px;
+}
+
+.email {
+    margin-top: 30px;
+}
+
+.mensaje {
+    margin-top: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #4b7ba3;
+    box-shadow: 0px 0px 15px #111111;
+    background-color: transparent;
+    background-color: #2a475e85;
+    border-radius: 8px;
+}
+
+textarea {
+    min-width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+    font-family: sans-serif;
+}
+
+input:hover, textarea:hover {
+    border-color: #66c0f4;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+.contacto_button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4b7ba3;
+    border-radius: 6px;
+    margin-top: 30px;
+    background-color: #2a475e85;
+    color: #c7d5e0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contacto_button:hover {
+    background-color: #66c0f4;
+    color: #171a21;
+}
