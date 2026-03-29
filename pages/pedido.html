@@ -44,7 +44,36 @@
                     <label for="email">Correo electrónico:</label>
                     <input type="email" name="email" id="email" placeholder="Ej: gonzales@gmail.com" required>
                 </fieldset>
-            
+                
+                <fieldset>
+                    <legend>Servicio solicitado</legend>
+
+                    <label for="servicio">Seleccioná un servicio:</label>
+                    
+                    <select name="servicio" id="servicio" required>    
+                        <option disabled selected>Selecciona una opción</option>
+                        <option value="venta-juegos">Venta de Juegos</option>
+                        <option value="soporte-tecnico">Soporte Técnico</option>
+                        <option value="comunidad">Comunidad y foros</option>
+                    </select>
+
+                    <label for="fecha">Fecha de consulta:</label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Plataforma de preferencia</legend>
+
+                    <input type="radio" name="plataforma" id="pc" value="pc" required>
+                    <label for="pc">PC / Windows</label>
+                    
+                    <input type="radio" name="plataforma" id="mac" value="mac" required>
+                    <label for="mac">Mac</label>
+
+                    <input type="radio" name="plataforma" id="linux" value="linux">
+                    <label for="linux">Linux</label>
+                </fieldset>
+
             </form>
 
         </section>
