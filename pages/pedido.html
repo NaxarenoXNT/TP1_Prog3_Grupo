@@ -1,0 +1,116 @@
+<!-- Comentario de prueba -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="../CSS/style_pedido.css">
+    <link rel="shortcut icon" href="../Assets/favicon/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="../Assets/Imagenes/steam-logo.png" alt="Logo de Steam" class="logo">    
+        </div>
+        <div class="nav-links">
+            <nav>
+                <a href="../Index.html">Inicio</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./pedido.html">Realizar Pedido</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./faq.html">FAQ</a>
+            </nav>            
+        </div>
+    </header>
+
+    <main>
+        <section id="form-pedido">
+            <h1 class="titulo-main">Realizar pedido</h1>
+
+            <form action="procesar.php">
+
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Nicolas Gonzales" required>
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required placeholder="Ej: +54 291 484576">
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="Ej: gonzales@gmail.com" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Servicio solicitado</legend>
+
+                    <label for="servicio">Seleccioná un servicio:</label>
+                    
+                    <select name="servicio" id="servicio" required>    
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="venta-juegos">Venta de Juegos</option>
+                        <option value="soporte-tecnico">Soporte Técnico</option>
+                        <option value="comunidad">Comunidad y foros</option>
+                    </select>
+
+                    <label for="fecha">Fecha de consulta:</label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Plataforma de preferencia</legend>
+
+                    <input type="radio" name="plataforma" id="pc" value="pc" required>
+                    <label for="pc">PC / Windows</label>
+                    
+                    <input type="radio" name="plataforma" id="mac" value="mac">
+                    <label for="mac">Mac</label>
+
+                    <input type="radio" name="plataforma" id="linux" value="linux">
+                    <label for="linux">Linux</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Qué géneros te interesan?</legend>
+
+                    <input type="checkbox" name="genero" id="accion" value="accion">
+                    <label for="accion">Acción</label>
+
+                    <input type="checkbox" name="genero" id="rpg" value="rpg">
+                    <label for="rpg">RPG</label>
+
+                    <input type="checkbox" name="genero" id="estrategia" value="estrategia">
+                    <label for="estrategia">Estrategia</label>
+
+                    <input type="checkbox" name="genero" id="simulacion" value="simulacion">
+                    <label for="simulacion">Simulación</label>
+
+                    <input type="checkbox" name="genero" id="aventura" value="aventura">
+                    <label for="aventura">Aventura</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+
+                    <label for="comentarios">Contanos más sobre tu pedido:</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" rows="5" placeholder="Ej: Busco juegos cooperativos para jugar con amigos..."></textarea>
+                </fieldset>
+                
+                <div class="form-botones">
+                    <button type="submit">Enviar pedido</button>
+                    <button type="reset">Limpiar formularios</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
