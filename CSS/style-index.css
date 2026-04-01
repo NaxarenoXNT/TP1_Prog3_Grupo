@@ -179,10 +179,9 @@ main {
 }
 
 
-.footer {
+footer {
+    background-color: var(--nav-color);
+    width: auto;
+    padding: 26px 60px;
     text-align: center;
-    border-top: 1px solid #0d2847;
-    padding: var(--space-m);
-    margin-top: var(--space-l);
 }
-
