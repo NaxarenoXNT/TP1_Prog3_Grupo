@@ -1,0 +1,6 @@
+footer {
+    background-color: var(--nav-color);
+    width: auto;
+    padding: 26px 60px;
+    text-align: center;
+}
