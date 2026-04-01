@@ -2,13 +2,11 @@
     --fuente-principal: Arial, sans-serif;
     --space-s: 8px;
     --space-m: 16px;
-    --space-l: 24px;
-
-    /* 🔥 IMPORTANTE (te faltaba) */
+    --space-l: 24px;   
     --nav-color: #111927;
 }
 
-/* 🔵 BASE */
+
 body {
     font-family: var(--fuente-principal);
     background-color: #111927;
@@ -16,7 +14,7 @@ body {
     margin: 0;
 }
 
-/* 🔵 HEADER */
+
 .header {
     background-color: #111927;
     border-bottom: 1px solid #0d2847;
@@ -55,7 +53,7 @@ body {
     margin: 2px 0 0 0;
 }
 
-/* 🔵 NAV */
+
 .menu {
     list-style: none;
     margin: 0;
@@ -84,12 +82,12 @@ body {
     border-bottom: 2px solid #2870bd;
 }
 
-/* 🔵 MAIN */
+
 main {
     text-align: center;
 }
 
-/* 🔥 INTRO */
+
 .intro {
     padding: 10px;
     background-color: #1b2838;
@@ -105,7 +103,7 @@ main {
     margin: 0 auto;
 }
 
-/* 🔥 BANNER */
+
 .banner {
     height: 300px;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
@@ -139,7 +137,7 @@ main {
     background-color: #1f5a94;
 }
 
-/* 🔥 CATEGORÍAS */
+
 .categorias {
     padding: 40px;
     background-color: #1b2838;
@@ -181,9 +179,9 @@ main {
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-/*FOOTER */
 footer {
     background-color: var(--nav-color);
+    width: auto;
     padding: 26px 60px;
     text-align: center;
 }
