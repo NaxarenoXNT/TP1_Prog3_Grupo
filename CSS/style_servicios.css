@@ -1,0 +1,137 @@
+:root {
+    /* --background-color: #0d2847; */
+    --primary-color: #111927;
+    --light-primary: #1a3560; 
+    --light-secondary: #1a61ac;
+}
+
+html {
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Assets/Imagenes/fondo.jpg);
+    color: white;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: auto;
+    padding: 40px;
+}
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand img {
+    height: 65px;
+    cursor: pointer;
+}
+.nav-links {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 16px;
+}
+.nav-links a:hover {
+    color: var(--light-secondary);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--light-secondary);
+    transition: color 0.3s ease-out;
+}
+
+.services {
+    width: 80%;
+    background-color: #1a35609a;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.services h1 {
+    text-align: center;
+    border-bottom: 4px solid var(--light-secondary);
+    padding-bottom: 24px;
+}
+
+.services-container {
+    text-align: center;
+    font-size: 0;
+}
+.service-card {
+    display: inline-block;
+    width: 22%;
+    min-width: 280px;
+    min-height: 500px;
+    padding: 16px;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 20px;
+}
+.service-card:hover {
+    background-color: #1a61ac46;
+    transition: background-color 0.3s ease-out;
+}
+.service-card:first-of-type {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.service-card:last-of-type {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.service-card h2 {
+    text-align: center;
+}
+.service-card p {
+    font-size: 26px;
+}
+.service-card img {
+    width: 140px;
+    height: auto;
+    background-color: var(--light-primary);
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.info-pedido {
+    border-top: 4px solid var(--light-secondary);
+    margin-top: 10px;
+}
+.info-pedido h4 {
+    font-size: 22px;
+    font-weight: normal;
+}
+.btn-pedido {
+    background-color: var(--light-primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.btn-pedido:hover {
+    background-color: var(--light-secondary);
+    transition: background-color 0.3s ease-out;
+}
+
+footer {
+    background-color: var(--primary-color);
+    width: auto;
+    padding: 24px 60px;
+    font-size: 22px;
+    text-align: center;
+}

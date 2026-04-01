@@ -1,0 +1,29 @@
+header {
+    background-color: var(--primary-color);
+    width: auto;
+    padding: 40px;
+}
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand img {
+    height: 65px;
+    cursor: pointer;
+}
+.nav-links {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 16px;
+}
+.nav-links a:hover {
+    color: var(--light-secondary);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--light-secondary);
+    transition: color 0.3s ease-out;
+}
