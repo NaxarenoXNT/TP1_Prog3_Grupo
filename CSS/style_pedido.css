@@ -34,22 +34,22 @@ main {
 }
 
 /* Formulario (general) */
-form {
+.form_1 {
     display: flex;
     flex-direction: column;
     gap: 25px
 }
 
 /* Cuadrados (fieldset) */
-fieldset {
-    background-color: var(--nav-color);
+.cuadrados {
+    background-color: #111927;
     border: none;
     border-radius: 12px;
     padding: 20px;
 }
 
 /* Titulos (fieldset) */
-legend {
+.titulo_leg {
     font-size: 22px;
     font-weight: bold;
     padding: 0px 10px;

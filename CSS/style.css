@@ -334,6 +334,118 @@ footer {
 }
 
 /* PEDIDOS */
+.body_pedido {
+    background-color: #0d2847;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#form-pedido {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.titulo-main {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Formulario general */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Fieldsets */
+fieldset {
+    background-color: #111927;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Títulos de cada sección */
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #c7d5e0;
+}
+
+/* Inputs generales */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    background-color: #2a475e85;
+    color: white;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #b8c6d0;
+}
+
+/* Focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+/* Radio y checkbox alineados */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Agrupar opciones */
+fieldset input[type="radio"] + label,
+fieldset input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+.form-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #111927;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--light-background);
+    transform: scale(1.03);
+}
 
 
 /* CONTACTO */
