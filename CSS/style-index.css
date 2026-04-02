@@ -88,23 +88,23 @@ main {
 }
 
 
-.intro {
+.intro_index {
     padding: 10px;
     background-color: #1b2838;
 }
 
-.intro h2 {
+.intro.index h2 {
     font-size: 26px;
     margin: 5px;
 }
 
-.intro p {
+.intro.index p {
     color: #c7d5e0;
     margin: 0 auto;
 }
 
 
-.banner {
+.banner.index {
     height: 300px;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
                 url('../assets/img/banner.jpg') center/cover no-repeat;
