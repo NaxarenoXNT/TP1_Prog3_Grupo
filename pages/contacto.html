@@ -24,30 +24,35 @@
         </div>
     </header>
 
+    <main>
+        <section class="contacto_seccion">
+            <h1>Realiza tu consulta</h1>
+            <!-- Creación de la sección "Formulario" -->
+            <form class="contacto_formulario">
+                <p class="contacto_dudas">¿Tenés dudas o necesitás ayuda?</p>
+                <p class="contacto_respondemos">Escribinos y te responderemos a la brevedad.</p>
+                <div class="nombre">
+                    <label class="contacto_label" for="nombre">Nombre completo</label>
+                    <input class="contacto_input" type="text" id="nombre" name="nombre" placeholder="Gianfranco Tarulli" required>
+                </div>
 
-    <!-- Creación de la sección "Formulario" -->
-    <form class="contacto_formulario">
-        <p class="contacto_dudas">¿Tenés dudas o necesitás ayuda?</p>
-        <p class="contacto_respondemos">Escribinos y te responderemos a la brevedad.</p>
-        <div class="nombre">
-            <label class="contacto_label" for="nombre">Nombre completo</label>
-            <input class="contacto_input" type="text" id="nombre" name="nombre" placeholder="Gianfranco Tarulli" required>
-        </div>
+                <div class="email">
+                    <label class="contacto_label" for="email">Email</label>
+                    <input class="contacto_input" type="email" id="email" name="email" placeholder="giantarulli@gmail.com" required>
+                </div>
 
-        <div class="email">
-            <label class="contacto_label" for="email">Email</label>
-            <input class="contacto_input" type="email" id="email" name="email" placeholder="giantarulli@gmail.com" required>
-        </div>
+                <div class="mensaje">
+                    <label class="contacto_label" for="mensaje">Deja tu mensaje</label>
+                    <textarea class="contacto_textarea" name="mensaje" id="mensaje" rows="5" required placeholder="Necesito ayuda con el pago"></textarea>
+                </div>
 
-        <div class="mensaje">
-            <label class="contacto_label" for="mensaje">Deja tu mensaje</label>
-            <textarea class="contacto_textarea" name="mensaje" id="mensaje" rows="5" required placeholder="Necesito ayuda con el pago"></textarea>
-        </div>
+                <div>
+                    <button class="contacto_button">Enviar</button>
+                </div>
+            </form>            
+        </section>
+    </main>
 
-        <div>
-            <button class="contacto_button">Enviar</button>
-        </div>
-    </form>
 
 
     <!-- Creación de la sección "Footer" -->

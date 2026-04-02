@@ -54,8 +54,10 @@ footer {
 
 
 .body_index{
-    font-family: var(--fuente-principal);
+    font-family: Arial, sans-serif;
     background-image: url('../Assets/img/fondo_pagina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     margin: 0;
 }
@@ -71,7 +73,7 @@ footer {
 }
 
 .intro_index h1 {
-    font-size: 26px;
+    font-size: 44px;
     margin: 2px;
 
 }
@@ -80,6 +82,7 @@ footer {
     color: #9ca7b3;
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .banner_index {
@@ -92,27 +95,31 @@ footer {
 }
 
 .banner-content_index h2 {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 .banner-content_index p {
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin: 26px 0 16px 0;
     color: #c7d5e0;
 }
 
 .banner-button_index {
-    padding: 10px 20px;
+    padding: 18px 24px;
     background-color: #2870bd;
     border: none;
     color: white;
     cursor: pointer;
+    font-size: 22px;
     font-weight: bold;
     border-radius: 5px;
+    margin: 14px 0;
 }
 
 .banner-button_index:hover {
-    background-color: #1f5a94;
+    background-color: var(--light-primary);
+    transition: background-color 0.3s ease-out;
 }
 
 .categorias_index {
@@ -121,8 +128,8 @@ footer {
 }
 
 .categorias_index h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 38px;
+    font-size: 30px;
 }
 
 .cards-container_index {
@@ -148,7 +155,8 @@ footer {
 }
 
 .card_index h3 {
-    padding: 15px;
+    padding: 18px;
+    font-size: 20px;
 }
 
 .card_index:hover {
@@ -165,7 +173,7 @@ footer {
 .servicios_body {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../Assets/img/fondo.jpg);
+    background-image: url(../Assets/img/fondo_pagina.jpg);
     color: white;
     font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
     margin: 0;
@@ -185,6 +193,7 @@ footer {
     text-align: center;
     border-bottom: 4px solid var(--light-secondary);
     padding-bottom: 24px;
+    font-size: 38px;
 }
 
 .services-container {
@@ -259,7 +268,7 @@ footer {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../Assets/img/fondo_pagina.jpeg');
+    background-image: url('../Assets/img/fondo_pagina.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -274,9 +283,11 @@ footer {
     flex: 1;
 }
 
-.equipo_body main h2 {
-    margin-bottom: 24px;
-    color: #f8f8fa;
+.equipo_body main h1 {
+    margin-bottom: 54px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 38px;
 }
 
 .equipo_grilla {
@@ -293,6 +304,13 @@ footer {
     width: 220px;
     text-align: center;
 }
+.miembro:hover {
+    box-shadow: 0 0 34px #0000007a;
+    transition: box-shadow 0.3s ease-out;
+    cursor: pointer;
+    background-color: #cccccc;
+    transition: background-color 0.3s ease-out;
+}
 
 .miembro img {
     width: 100px;
@@ -306,12 +324,13 @@ footer {
 .miembro h3 {
     margin: 0 0 8px 0;
     color: #1a1a2e;
+    font-size: 20px;
 }
 
 .miembro p {
     margin: 0;
     color: #555555;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* PEDIDOS */
@@ -323,8 +342,15 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+.contacto_seccion h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 38px;
 }
 
 /* CSS de la seccion "Form" */
