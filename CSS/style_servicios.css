@@ -5,6 +5,8 @@
     --light-secondary: #1a61ac;
 }
 
+
+
 html {
     background-color: var(--primary-color);
     box-sizing: border-box;
