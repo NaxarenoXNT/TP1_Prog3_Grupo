@@ -335,7 +335,7 @@ footer {
 
 /* PEDIDOS */
 .body_pedido {
-    background-color: #0d2847;
+    background-image: url(../Assets/img/fondo_pagina.jpg);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
