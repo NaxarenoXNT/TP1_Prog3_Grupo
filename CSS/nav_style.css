@@ -1,7 +1,15 @@
+:root {
+    /* --background-color: #0d2847; */
+    --primary-color: #111927;
+    --light-primary: #1a3560; 
+    --light-secondary: #1a61ac;
+}
+
 header {
     background-color: var(--primary-color);
     width: auto;
     padding: 40px;
+    margin-bottom: 70px;
 }
 .brand {
     display: inline-block;
@@ -14,6 +22,7 @@ header {
 .nav-links {
     display: inline-block;
     vertical-align: middle;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
 }
 .nav-links a {
     color: #ffffff;

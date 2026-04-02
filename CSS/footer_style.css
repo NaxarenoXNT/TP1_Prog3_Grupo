@@ -1,6 +1,10 @@
 footer {
-    background-color: var(--nav-color);
+    color: #ffffff;
+    background-color: #111927;
     width: auto;
     padding: 26px 60px;
     text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }

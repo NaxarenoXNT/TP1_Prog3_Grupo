@@ -20,36 +20,6 @@ body {
     font-size: 20px;
 }
 
-header {
-    background-color: var(--primary-color);
-    width: auto;
-    padding: 40px;
-}
-.brand {
-    display: inline-block;
-    vertical-align: middle;
-}
-.brand img {
-    height: 65px;
-    cursor: pointer;
-}
-.nav-links {
-    display: inline-block;
-    vertical-align: middle;
-}
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 26px;
-    margin: 0 16px;
-}
-.nav-links a:hover {
-    color: var(--light-secondary);
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--light-secondary);
-    transition: color 0.3s ease-out;
-}
-
 .services {
     width: 80%;
     background-color: #1a35609a;
@@ -126,12 +96,4 @@ header {
 .btn-pedido:hover {
     background-color: var(--light-secondary);
     transition: background-color 0.3s ease-out;
-}
-
-footer {
-    background-color: var(--primary-color);
-    width: auto;
-    padding: 24px 60px;
-    font-size: 22px;
-    text-align: center;
 }

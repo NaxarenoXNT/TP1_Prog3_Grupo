@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-image: url('../Assets/Imagenes/fondo_pagina.jpeg');
     color: white;
     font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
     margin: 0;
@@ -14,46 +14,12 @@ body {
     font-size: 20px;
 }
 
-header {
-    background-color: var(--nav-color);
-    width: auto;
-    padding: 40px;
-}
-
-.brand img {
-    height: 65px;
-}
-
-.nav-links {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 28px;
-    margin: 0 16px;
-}
-
-.nav-links a:hover {
-    color: var(--light-blue);
-    transition: color 0.3s ease-out;
-}
-
 main {
-    background-color: var(--background-color);
-}
-
-footer {
-    background-color: var(--nav-color);
-    width: auto;
-    padding: 26px 60px;
-    text-align: center;
+    background-color: #1a35609a;
+    padding: 2px 0;
 }
 
 /*---------------------------------------------------------------------------------*/
-
 /* section id="form-pedido" */
 #form-pedido {
     width: 80%;
