@@ -1,71 +1,11 @@
-body {
+.contacto_body {
     background-image: url("../Assets/Imagenes/fondo_pagina.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(23, 26, 33, 0.856);
-    z-index: -1;
-}
-
-* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-
-/* CSS de la seccion "Header" */
-
-header {
-    background-color: #2a475e;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    margin-bottom: 70px;
-}
-
-.contacto_logo_header {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-    position: absolute;
-}
-
-.contacto_h4 {
-    padding-bottom: 10px;
-    color: #dddddd;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 17px 40px;
-}
-
-.contacto_nav_header {
-    color: #dddddd;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    display:inline-block;
-    padding-right: 20px;
-}
-
-.contacto_nav_header:hover {
-    color: #ffffff;
-}
-
-.activo {
-    text-decoration:underline;
-    color: #79afff;
-}
-
 
 /* CSS de la seccion "Form" */
 
@@ -93,20 +33,12 @@ header {
     box-shadow: 0 0 10px #00000080;
 }
 
-.nombre {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.apellido {
-    display: inline-block;
-}
-
-label {
+.contacto_label {
     display: block;
     color: #c7d5e0;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .email {
@@ -117,19 +49,25 @@ label {
     margin-top: 30px;
 }
 
-input, textarea {
+.contacto_input::placeholder, .contacto_textarea::placeholder {
+  color: #bebebe9a;
+}
+
+
+.contacto_input, .contacto_textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 6px 12px;
+    padding: 10px 12px;
     border: 1px solid #4b7ba3;
     box-shadow: 0px 0px 15px #111111;
     background-color: transparent;
     background-color: #2a475e85;
     border-radius: 8px;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
-textarea {
+.contacto_textarea {
     min-width: 100%;
     resize: vertical;
     min-height: 100px;
@@ -137,11 +75,11 @@ textarea {
     font-family: sans-serif;
 }
 
-input:hover, textarea:hover {
+.contacto_input:hover, .contacto_textarea:hover {
     border-color: #66c0f4;
 }
 
-input:focus, textarea:focus {
+.contacto_input:focus, .contacto_textarea:focus {
     outline: none;
     border-color: #66c0f4;
     box-shadow: 0 0 5px #66c0f4;
@@ -164,51 +102,4 @@ input:focus, textarea:focus {
     background-color: #66c0f4;
     color: #171a21;
     transform: scale(1.02);
-}
-
-
-/* CSS de la seccion "Footer" */
-
-.contacto_footer {
-    background-color: #1e3242;
-    margin-top: 70px;
-    padding-bottom: 10px;
-}
-
-.contacto_footer_logo {
-    color: #ffffff;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px 50px;
-}
-
-.contacto_nav_footer {
-    color: #c7d5e0;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 5px 10px;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contacto_nav_footer:hover {
-    color: #ffffff;
-}
-
-.contacto_footer_copy {
-    color: #8f98a0;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 25px;
-    text-align: center;
-    background-color: #162531;
-    padding: 5px 0;
-}
-
-.contacto_logo_footer {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
-    position: absolute;
 }

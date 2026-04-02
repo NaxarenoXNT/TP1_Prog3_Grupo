@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Contacto de PlaySteam</title>
-    <link rel="stylesheet" href="../CSS/contacto_style.css">
-    <link rel="shortcut icon" href="../Assets/Favicon/logo_steam_pagina.PNG">
+    <title>Contacto - Steam</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Assets/favicon/favicon.png" type="image/x-icon">
 </head>
 
-<body>
-    <!-- Creación de la sección "Header" -->
+<body class="contacto_body">
+    <!-- Creación de la sección "Nav" -->
     <header>
-        <img class="contacto_logo_header" src="../Assets/Favicon/logo_steam_pagina.PNG">
-        <h4 class="contacto_h4">PlaySteam</h4>
-        <nav>
-            <a class="contacto_nav_header" href="../Index.html">Inicio</a>
-            <a class="contacto_nav_header" href="../pages/servicios.html">Servicios</a>
-            <a class="contacto_nav_header" href="../pages/equipo.html">Equipo</a>
-            <a class="contacto_nav_header" href="../pages/pedido.html">Pedido</a>
-            <a class="contacto_nav_header activo" href="../pages/contacto.html">Contacto</a>
-            <a class="contacto_nav_header" href="../pages/faq.html">FAQ</a>
-        </nav>
+        <div class="brand">
+            <a href="../Index.html"><img src="../Assets/Imagenes/steam-logo.png" alt="Logo de Steam" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <nav>
+                <a href="../Index.html">Inicio</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./pedido.html">Realizar Pedido</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./faq.html">FAQ</a>
+            </nav>            
+        </div>
     </header>
 
 
@@ -27,23 +30,18 @@
         <p class="contacto_dudas">¿Tenés dudas o necesitás ayuda?</p>
         <p class="contacto_respondemos">Escribinos y te responderemos a la brevedad.</p>
         <div class="nombre">
-            <label for="nombre">Nombre/s</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
-        </div>
-
-        <div class="apellido">
-            <label for="apellido">Apellido/s</label>
-            <input type="text" id="apellido" name="apellido" placeholder="García" required>
+            <label class="contacto_label" for="nombre">Nombre completo</label>
+            <input class="contacto_input" type="text" id="nombre" name="nombre" placeholder="Gianfranco Tarulli" required>
         </div>
 
         <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+            <label class="contacto_label" for="email">Email</label>
+            <input class="contacto_input" type="email" id="email" name="email" placeholder="giantarulli@gmail.com" required>
         </div>
 
         <div class="mensaje">
-            <label for="mensaje">Deja tu mensaje</label>
-            <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+            <label class="contacto_label" for="mensaje">Deja tu mensaje</label>
+            <textarea class="contacto_textarea" name="mensaje" id="mensaje" rows="5" required placeholder="Necesito ayuda con el pago"></textarea>
         </div>
 
         <div>
@@ -53,30 +51,8 @@
 
 
     <!-- Creación de la sección "Footer" -->
-    <footer class="contacto_footer">
-        <div class="contacto_footer_contenido">
-            
-            <img class="contacto_logo_footer" src="../Assets/Favicon/logo_steam_pagina.PNG">
-
-            <h3 class="contacto_footer_logo">PlaySteam</h3>
-
-            
-
-            <nav>
-                <a class="contacto_nav_footer" href="../Index.html">Inicio</a>
-                <a class="contacto_nav_footer" href="../pages/servicios.html">Servicios</a>
-                <a class="contacto_nav_footer" href="../pages/equipo.html">Equipo</a>
-                <a class="contacto_nav_footer" href="../pages/pedido.html">Pedido</a>
-                <a class="contacto_nav_footer" href="../pages/contacto.html">Contacto</a>
-                <a class="contacto_nav_footer" href="../pages/faq.html">FAQ</a>
-            </nav>
-
-            
-            <p class="contacto_footer_copy">© 2026 PlaySteam. Todos los derechos reservados.</p>
-            
-            
-
-        </div>
+    <footer>
+        <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

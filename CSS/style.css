@@ -1,0 +1,229 @@
+/* NAV */
+:root {
+    /* --background-color: #0d2847; */
+    --primary-color: #111927;
+    --light-primary: #1a3560; 
+    --light-secondary: #1a61ac;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: auto;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand img {
+    height: 65px;
+    cursor: pointer;
+}
+.nav-links {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 16px;
+}
+.nav-links a:hover {
+    color: var(--light-secondary);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--light-secondary);
+    transition: color 0.3s ease-out;
+}
+
+/* FOOTER */
+footer {
+    color: #ffffff;
+    background-color: #111927;
+    width: auto;
+    padding: 26px 60px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* INDEX */
+
+
+/* SERVICIOS */
+
+
+/* EQUIPO */
+.equipo_body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/Imagenes/fondo_pagina.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipo_body main {
+    padding: 32px;
+    flex: 1;
+}
+
+.equipo_body main h2 {
+    margin-bottom: 24px;
+    color: #f8f8fa;
+}
+
+.equipo_grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.miembro {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 24px;
+    width: 220px;
+    text-align: center;
+}
+
+.miembro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 2px solid #1a1a2e;
+}
+
+.miembro h3 {
+    margin: 0 0 8px 0;
+    color: #1a1a2e;
+}
+
+.miembro p {
+    margin: 0;
+    color: #555555;
+    font-size: 14px;
+}
+
+/* PEDIDOS */
+
+
+/* CONTACTO */
+.contacto_body {
+    background-image: url("../Assets/Imagenes/fondo_pagina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS de la seccion "Form" */
+
+.contacto_dudas {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contacto_respondemos {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b8c6d0;
+    margin-bottom: 30px;
+}
+
+.contacto_formulario {
+    padding: 60px 60px;
+    max-width: 545px;
+    margin: auto;
+    background-color: #35597752;
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000080;
+}
+
+.contacto_label {
+    display: block;
+    color: #c7d5e0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.email {
+    margin-top: 30px;
+}
+
+.mensaje {
+    margin-top: 30px;
+}
+
+.contacto_input::placeholder, .contacto_textarea::placeholder {
+  color: #bebebe9a;
+}
+
+
+.contacto_input, .contacto_textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #4b7ba3;
+    box-shadow: 0px 0px 15px #111111;
+    background-color: transparent;
+    background-color: #2a475e85;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contacto_textarea {
+    min-width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+    font-family: sans-serif;
+}
+
+.contacto_input:hover, .contacto_textarea:hover {
+    border-color: #66c0f4;
+}
+
+.contacto_input:focus, .contacto_textarea:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+.contacto_button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4b7ba3;
+    border-radius: 6px;
+    margin-top: 30px;
+    background-color: #2a475e85;
+    color: #c7d5e0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contacto_button:hover {
+    background-color: #66c0f4;
+    color: #171a21;
+    transform: scale(1.02);
+}
+
+/* FAQ */
