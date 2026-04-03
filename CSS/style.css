@@ -51,8 +51,6 @@ footer {
 }
 
 /* INDEX */
-
-
 .body_index{
     font-family: Arial, sans-serif;
     background-image: url('../Assets/img/fondo_pagina.jpg');
@@ -171,9 +169,10 @@ footer {
     box-sizing: border-box;
 }
 .servicios_body {
+    background-image: url(../Assets/img/fondo_pagina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../Assets/img/fondo_pagina.jpg);
+    background-attachment: fixed;
     color: white;
     font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
     margin: 0;
@@ -260,9 +259,6 @@ footer {
     transition: background-color 0.3s ease-out;
 }
 
-
-
-
 /* EQUIPO */
 .equipo_body {
     font-family: Arial, sans-serif;
@@ -336,6 +332,10 @@ footer {
 /* PEDIDOS */
 .body_pedido {
     background-image: url(../Assets/img/fondo_pagina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
