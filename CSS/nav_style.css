@@ -1,0 +1,38 @@
+:root {
+    /* --background-color: #0d2847; */
+    --primary-color: #111927;
+    --light-primary: #1a3560; 
+    --light-secondary: #1a61ac;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: auto;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand img {
+    height: 65px;
+    cursor: pointer;
+}
+.nav-links {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 16px;
+}
+.nav-links a:hover {
+    color: var(--light-secondary);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--light-secondary);
+    transition: color 0.3s ease-out;
+}

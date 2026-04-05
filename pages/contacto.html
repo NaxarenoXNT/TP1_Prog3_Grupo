@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto - Steam</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Assets/favicon/favicon.png" type="image/x-icon">
+</head>
+
+<body class="contacto_body">
+    <!-- Creación de la sección "Nav" -->
+    <header>
+        <div class="brand">
+            <a href="../Index.html"><img src="../Assets/img/icono.png" alt="Logo de Steam" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <nav>
+                <a href="../Index.html">Inicio</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./pedido.html">Realizar Pedido</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./faq.html">FAQ</a>
+            </nav>            
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto_seccion">
+            <h1>Realiza tu consulta</h1>
+            <!-- Creación de la sección "Formulario" -->
+            <form class="contacto_formulario">
+                <p class="contacto_dudas">¿Tenés dudas o necesitás ayuda?</p>
+                <p class="contacto_respondemos">Escribinos y te responderemos a la brevedad.</p>
+                <div class="nombre">
+                    <label class="contacto_label" for="nombre">Nombre completo</label>
+                    <input class="contacto_input" type="text" id="nombre" name="nombre" placeholder="Gianfranco Tarulli" required>
+                </div>
+
+                <div class="email">
+                    <label class="contacto_label" for="email">Email</label>
+                    <input class="contacto_input" type="email" id="email" name="email" placeholder="giantarulli@gmail.com" required>
+                </div>
+
+                <div class="mensaje">
+                    <label class="contacto_label" for="mensaje">Deja tu mensaje</label>
+                    <textarea class="contacto_textarea" name="mensaje" id="mensaje" rows="5" required placeholder="Necesito ayuda con el pago"></textarea>
+                </div>
+
+                <div>
+                    <button class="contacto_button">Enviar</button>
+                </div>
+            </form>            
+        </section>
+    </main>
+
+    <!-- Creación de la sección "Footer" -->
+    <footer>
+        <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

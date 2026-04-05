@@ -1,0 +1,590 @@
+/* NAV */
+:root {
+    /* --background-color: #0d2847; */
+    --primary-color: #111927;
+    --light-primary: #1a3560; 
+    --light-secondary: #1a61ac;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: auto;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand img {
+    height: 65px;
+    cursor: pointer;
+}
+.nav-links {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 16px;
+}
+.nav-links a:hover {
+    color: var(--light-secondary);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--light-secondary);
+    transition: color 0.3s ease-out;
+}
+
+/* FOOTER */
+footer {
+    color: #ffffff;
+    background-color: #111927;
+    width: auto;
+    padding: 26px 60px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* INDEX */
+.body_index{
+    font-family: Arial, sans-serif;
+    background-image: url('../Assets/img/fondo_pagina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+}
+
+.main_index {
+    text-align: center;
+}
+
+.intro_index {
+    padding: 10px;
+    margin: 5px;
+    background-color: transparent;
+}
+
+.intro_index h1 {
+    font-size: 44px;
+    margin: 2px;
+
+}
+
+.intro_index p {
+    color: #9ca7b3;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.banner_index {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+                url('../assets/img/banner.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content_index h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.banner-content_index p {
+    font-size: 22px;
+    margin: 26px 0 16px 0;
+    color: #c7d5e0;
+}
+
+.banner-button_index {
+    padding: 18px 24px;
+    background-color: #2870bd;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 14px 0;
+}
+
+.banner-button_index:hover {
+    background-color: var(--light-primary);
+    transition: background-color 0.3s ease-out;
+}
+
+.categorias_index {
+    padding: 40px;
+    background-color: transparent;
+}
+
+.categorias_index h2 {
+    margin-bottom: 38px;
+    font-size: 30px;
+}
+
+.cards-container_index {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card_index {
+    background-color: #2a475e;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card_index img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card_index h3 {
+    padding: 18px;
+    font-size: 20px;
+}
+
+.card_index:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
+/* SERVICIOS */
+.servicios_html {
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+.servicios_body {
+    background-image: url(../Assets/img/fondo_pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.services {
+    width: 80%;
+    background-color: #1a35609a;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.services h1 {
+    text-align: center;
+    border-bottom: 4px solid var(--light-secondary);
+    padding-bottom: 24px;
+    font-size: 38px;
+}
+
+.services-container {
+    text-align: center;
+    font-size: 0;
+}
+.service-card {
+    display: inline-block;
+    width: 22%;
+    min-width: 280px;
+    min-height: 500px;
+    padding: 16px;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 20px;
+}
+.service-card:hover {
+    background-color: #1a61ac46;
+    transition: background-color 0.3s ease-out;
+}
+.service-card:first-of-type {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.service-card:last-of-type {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.service-card h2 {
+    text-align: center;
+}
+.service-card p {
+    font-size: 26px;
+}
+.service-card img {
+    width: 140px;
+    height: auto;
+    background-color: var(--light-primary);
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.info-pedido {
+    border-top: 4px solid var(--light-secondary);
+    margin-top: 10px;
+}
+.info-pedido h4 {
+    font-size: 22px;
+    font-weight: normal;
+}
+.btn-pedido {
+    background-color: var(--light-primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.btn-pedido:hover {
+    background-color: var(--light-secondary);
+    transition: background-color 0.3s ease-out;
+}
+
+/* EQUIPO */
+.equipo_body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/img/fondo_pagina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipo_body main {
+    padding: 32px;
+    flex: 1;
+}
+
+.equipo_body main h1 {
+    margin-bottom: 54px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 38px;
+}
+
+.equipo_grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.miembro {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 24px;
+    width: 220px;
+    text-align: center;
+}
+.miembro:hover {
+    box-shadow: 0 0 34px #0000007a;
+    transition: box-shadow 0.3s ease-out;
+    cursor: pointer;
+    background-color: #cccccc;
+    transition: background-color 0.3s ease-out;
+}
+
+.miembro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 2px solid #1a1a2e;
+}
+
+.miembro h3 {
+    margin: 0 0 8px 0;
+    color: #1a1a2e;
+    font-size: 20px;
+}
+
+.miembro p {
+    margin: 0;
+    color: #555555;
+    font-size: 16px;
+}
+
+/* PEDIDOS */
+.body_pedido {
+    background-image: url(../Assets/img/fondo_pagina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#form-pedido {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.titulo-main {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Formulario general */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Fieldsets */
+fieldset {
+    background-color: #111927;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Títulos de cada sección */
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #c7d5e0;
+}
+
+/* Inputs generales */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    background-color: #2a475e85;
+    color: white;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #b8c6d0;
+}
+
+/* Focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+/* Radio y checkbox alineados */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Agrupar opciones */
+fieldset input[type="radio"] + label,
+fieldset input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+.form-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #111927;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--light-background);
+    transform: scale(1.03);
+}
+
+
+/* CONTACTO */
+.contacto_body {
+    background-image: url("../Assets/img/fondo_pagina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.contacto_seccion h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 38px;
+}
+
+/* CSS de la seccion "Form" */
+
+.contacto_dudas {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contacto_respondemos {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b8c6d0;
+    margin-bottom: 30px;
+}
+
+.contacto_formulario {
+    padding: 60px 60px;
+    max-width: 545px;
+    margin: auto;
+    background-color: #35597752;
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000080;
+}
+
+.contacto_label {
+    display: block;
+    color: #c7d5e0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.email {
+    margin-top: 30px;
+}
+
+.mensaje {
+    margin-top: 30px;
+}
+
+.contacto_input::placeholder, .contacto_textarea::placeholder {
+  color: #bebebe9a;
+}
+
+
+.contacto_input, .contacto_textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #4b7ba3;
+    box-shadow: 0px 0px 15px #111111;
+    background-color: transparent;
+    background-color: #2a475e85;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contacto_textarea {
+    min-width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+    font-family: sans-serif;
+}
+
+.contacto_input:hover, .contacto_textarea:hover {
+    border-color: #66c0f4;
+}
+
+.contacto_input:focus, .contacto_textarea:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+.contacto_button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4b7ba3;
+    border-radius: 6px;
+    margin-top: 30px;
+    background-color: #2a475e85;
+    color: #c7d5e0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contacto_button:hover {
+    background-color: #66c0f4;
+    color: #171a21;
+    transform: scale(1.02);
+}
+
+/* FAQ */
+.faq_body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/img/fondo_pagina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;        
+    display: flex;             
+    flex-direction: column; 
+}
+
+/*Tarjetas de preguntas*/
+.pregunta {
+    margin: 32px;
+    padding: 12px;
+    color: #f8f8fa;
+    background-color: #1a61ac7e;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #2a475e85;
+}
