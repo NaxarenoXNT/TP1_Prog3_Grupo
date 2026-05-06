@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nazareno",
+    "apellido": "Negrete"
+  },
+  {
+    "id": 2,
+    "nombre": "Alejo",
+    "apellido": "Sanger"
+  },
+  {
+    "id": 3,
+    "nombre": "Julián",
+    "apellido": "Peralta"
+  },
+  {
+    "id": 4,
+    "nombre": "Gianfranco",
+    "apellido": "Tarulli"
+  },
+  {
+    "id": 5,
+    "nombre": "Román",
+    "apellido": "Strizzi"
+  },
+  {
+    "id": 6,
+    "nombre": "Nicolas",
+    "apellido": "Castellini"
+  }
+]
