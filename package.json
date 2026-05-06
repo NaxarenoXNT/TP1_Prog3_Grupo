@@ -1,0 +1,32 @@
+{
+  "name": "tp1_prog3_grupo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaxarenoXNT/TP1_Prog3_Grupo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/NaxarenoXNT/TP1_Prog3_Grupo/issues"
+  },
+  "homepage": "https://github.com/NaxarenoXNT/TP1_Prog3_Grupo#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
+    "nodemon": "^3.1.14"
+  }
+}
