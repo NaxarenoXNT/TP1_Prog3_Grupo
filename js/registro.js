@@ -14,7 +14,7 @@ document.getElementById("formRegistro").addEventListener("submit", async (e) => 
     }
 
     try {
-        const response = await fetch("https://tp3-prog3-grupo8.onrender.com/registro", {
+        const response = await fetch("https://tp3-prog3-grupo8.onrender.com/auth/registro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nombre, email, fechaNacimiento, password }),
