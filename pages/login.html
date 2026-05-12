@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Steam - Perfil</title>
+    <title>Steam - Login</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="icon" href="../Assets/favicon/favicon.png" />
 </head>
-
-<script src="../js/login.js"></script>
 
 <body class="login_body">
     <header>
@@ -26,11 +24,13 @@
                 <a href="./faq.html">FAQ</a>
                 <a href="./perfil.html">Perfil</a>
                 <a href="./login.html">Login</a>
-            </nav>            
+                <a href="./registro.html">Registro</a>
+            </nav>
         </div>
     </header>
+
     <main>
-        <form class="container_login" id="formLogin"> 
+        <form class="container_login" id="formLogin">
             <h2>Ingresa a tu cuenta</h2>
             <div>
                 <label>Email</label>
@@ -41,11 +41,16 @@
                 <input class="input_login" id="password" type="password" required />
             </div>
             <button class="button" type="submit">Ingresar</button>
+            <p class="login_registro_link">
+                ¿No tenés cuenta? <a href="./registro.html">Registrate acá</a>
+            </p>
         </form>
     </main>
 
     <footer class="footer_style">
         <p>© Steam - Todos los derechos reservados</p>
     </footer>
-<body>
+
+    <script src="../js/login.js"></script>
+</body>
 </html>
