@@ -9,7 +9,9 @@
     <link rel="icon" href="../Assets/favicon/favicon.png" />
 </head>
 
-<body>
+<script src="../js/login.js"></script>
+
+<body class="login_body">
     <header>
         <div class="brand">
             <a href="../Index.html"><img src="../Assets/img/icono.png" alt="Logo de Steam" class="logo"></a>
@@ -28,17 +30,17 @@
         </div>
     </header>
     <main>
-        <form class="container_login" action="perfil.html" >
-        <h2>Ingresa a tu cuenta</h2>
-        <div>
-            <label>Email</label>
-            <input class="input_login" type="email" required />
-        </div>
-        <div>
-            <label>Contraseña</label>
-            <input class="input_login" type="password" required />
-        </div>
-        <button class="botones_login" type="submit">Ingresar</button>
+        <form class="container_login" id="formLogin"> 
+            <h2>Ingresa a tu cuenta</h2>
+            <div>
+                <label>Email</label>
+                <input class="input_login" id="email" type="email" required />
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input class="input_login" id="password" type="password" required />
+            </div>
+            <button class="button" type="submit">Ingresar</button>
         </form>
     </main>
 
