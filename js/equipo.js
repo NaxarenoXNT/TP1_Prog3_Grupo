@@ -9,7 +9,7 @@ const datosVisuales = {
 
 const cargarEquipo = async () => {
     try {
-        const response = await fetch("http://localhost:3000/equipo");
+        const response = await fetch("https://tp3-prog3-grupo8.onrender.com/equipo");
 
         const equipo = await response.json();
 

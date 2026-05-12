@@ -12,7 +12,7 @@ const formatearPrecio = (precio) =>
 
 const cargarServicios = async () => {
     try {
-        const response = await fetch("http://localhost:3000/api/servicios");
+        const response = await fetch("https://tp3-prog3-grupo8.onrender.com/servicios");
         const servicios = await response.json();
 
         if (!response.ok) {

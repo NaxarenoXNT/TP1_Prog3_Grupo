@@ -9,7 +9,7 @@ if (!usuario) {
 // 3. Fetch al backend usando el id del usuario logueado
 const cargarPerfil = async () => {
     try {
-        const response = await fetch(`http://localhost:3000/perfil/${usuario.id}`);
+        const response = await fetch("https://tp3-prog3-grupo8.onrender.com/perfil/${usuario.id}");
 
         const data = await response.json();
 
