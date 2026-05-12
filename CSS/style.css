@@ -588,3 +588,50 @@ button:hover {
     font-size: 20px;
     box-shadow: 10px 10px 5px #2a475e85;
 }
+
+.login_body {
+    background-image: url("../Assets/img/fondo_pagina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container_login {
+    margin: 32px;
+    padding: 12px;
+    color: #f8f8fa;
+    background-color: #1a61ac7e;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #2a475e85;
+}
+
+.input_login {
+    background-color: #111927;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.perfil_body {
+    background-image: url("../Assets/img/fondo_pagina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil_container {
+    margin: 32px;
+    padding: 12px;
+    color: #f8f8fa;
+    background-color: #1a61ac7e;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #2a475e85;
+}

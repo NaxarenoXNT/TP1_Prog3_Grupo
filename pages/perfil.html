@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device_width, initial_scale=1.0">
-    <title>Equipo - Steam</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam - Perfil</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="../Assets/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../Assets/favicon/favicon.png" />
 </head>
 
-<script src="../js/equipo.js"></script>
+<script src="../js/perfil.js"></script>
 
-<body class="equipo_body">
-
+<body class="perfil_body">
     <header>
         <div class="brand">
             <a href="../Index.html"><img src="../Assets/img/icono.png" alt="Logo de Steam" class="logo"></a>
@@ -26,20 +26,22 @@
                 <a href="./faq.html">FAQ</a>
                 <a href="./perfil.html">Perfil</a>
                 <a href="./login.html">Login</a>
-            </nav>           
+            </nav>            
         </div>
     </header>
 
     <main>
-        <h1>Nuestro Equipo</h1>
-
-        <section class="equipo_grilla"> <!--Dejo la grilla vacia para generarla dinamicamente con js-->
+        <section class="perfil_container">
+            <h1 class="perfil_titulo">Tu perfil</h1>
+            <div class="perfil_datos">
+                <p>Nombre completo: <span id="perfil_nombre"></span></p>
+                <p>Email: <span id="perfil_email"></span></p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+    <footer class="footer_style">
+        <p>© Steam - Todos los derechos reservados</p>
     </footer>
-
 </body>
 </html>
