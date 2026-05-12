@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Steam</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Assets/favicon/favicon.png" type="image/x-icon">
+</head>
+
+<body class="registro_body">
+    <header>
+        <div class="brand">
+            <a href="../Index.html"><img src="../Assets/img/icono.png" alt="Logo de Steam" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <nav>
+                <a href="../Index.html">Inicio</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./pedido.html">Realizar Pedido</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./perfil.html">Perfil</a>
+                <a href="./login.html">Login</a>
+                <a href="./registro.html">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="registro_form_wrapper">
+            <form id="formRegistro">
+                <h2 class="registro_form_title">Crear nueva cuenta</h2>
+                <div class="registro_form_group">
+                    <label class="registro_label">Nombre Completo</label>
+                    <input class="registro_input" id="nombre" type="text" required />
+                </div>
+                <div class="registro_form_group">
+                    <label class="registro_label">Email</label>
+                    <input class="registro_input" id="email" type="email" required />
+                </div>
+                <div class="registro_form_group">
+                    <label class="registro_label">Fecha de nacimiento</label>
+                    <input class="registro_input" id="fechaNacimiento" type="date" required />
+                </div>
+                <div class="registro_form_group">
+                    <label class="registro_label">Contraseña</label>
+                    <input class="registro_input" id="password" type="password" required />
+                </div>
+                <div class="registro_form_group">
+                    <label class="registro_label">Confirmar contraseña</label>
+                    <input class="registro_input" id="confirmarPassword" type="password" required />
+                </div>
+                <button class="registro_button" type="submit">Regístrate</button>
+                <p class="registro_login_link">
+                    ¿Ya tenés cuenta? <a href="./login.html">Iniciá sesión acá</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer_style">
+        <p>© 2026 Steam - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../js/registro.js"></script>
+</body>
+</html>
