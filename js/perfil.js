@@ -1,16 +1,14 @@
-// 1. Recuperar el usuario guardado en el login
+// Recuperar el usuario guardado en el login
 const usuario = JSON.parse(sessionStorage.getItem("usuario"));
 
-// 2. Si no hay sesión, redirigir al login
+// Si no hay sesión, redirigir al login
 if (!usuario) {
     window.location.href = "./login.html";
 }
 
-// 3. Fetch al backend usando el id del usuario logueado
 const cargarPerfil = async () => {
     try {
         const response = await fetch(`https://tp3-prog3-grupo8.onrender.com/perfil/${usuario.id}`);
-
         const data = await response.json();
 
         if (!response.ok) {
@@ -19,10 +17,56 @@ const cargarPerfil = async () => {
             return;
         }
 
-        // 4. Mostrar los datos en el HTML
-        document.getElementById("perfil_nombre").textContent = data.nombre + " " + data.apellido;
+        // Datos del usuario 
+        document.getElementById("perfil_nombre").textContent = data.nombre;
         document.getElementById("perfil_email").textContent = data.email;
         document.getElementById("perfil_fecha_registro").textContent = data.fechaRegistro;
+
+        // Foto de perfil
+        const fotoEl = document.getElementById("perfil_foto");
+        if (fotoEl && data.foto) {
+            fotoEl.src = "../" + data.foto;
+            fotoEl.alt = "Foto de " + data.nombre;
+        }
+
+        // Ultimos 3 pedidos 
+        const listaPedidos = document.getElementById("perfil_pedidos");
+        if (listaPedidos) {
+            listaPedidos.innerHTML = "";
+            if (data.ultimos3Pedidos && data.ultimos3Pedidos.length > 0) {
+                data.ultimos3Pedidos.forEach((pedido) => {
+                    const li = document.createElement("li");
+                    li.classList.add("perfil_pedido_item");
+                    li.innerHTML = `
+                        <span class="pedido_nombre">${pedido.nombre || pedido.servicio || "Pedido"}</span>
+                        <span class="pedido_fecha">${pedido.fecha || ""}</span>
+                        <span class="pedido_estado pedido_estado--${(pedido.estado || "pendiente").toLowerCase()}">${pedido.estado || "Pendiente"}</span>
+                    `;
+                    listaPedidos.appendChild(li);
+                });
+            } else {
+                listaPedidos.innerHTML = '<li class="perfil_sin_pedidos">Aún no realizaste ningún pedido.</li>';
+            }
+        }
+
+        // Ofertas 
+        const contenedorOfertas = document.getElementById("perfil_ofertas");
+        if (contenedorOfertas) {
+            contenedorOfertas.innerHTML = "";
+            if (data.ofertas && data.ofertas.length > 0) {
+                data.ofertas.forEach((juego) => {
+                    const card = document.createElement("div");
+                    card.classList.add("oferta_card");
+                    card.innerHTML = `
+                        <span class="oferta_categoria">${juego.categoria}</span>
+                        <p class="oferta_nombre">${juego.nombre}</p>
+                    `;
+                    contenedorOfertas.appendChild(card);
+                });
+            } else {
+                contenedorOfertas.innerHTML = "<p>No hay ofertas disponibles.</p>";
+            }
+        }
 
     } catch (error) {
         console.error("Error de red:", error);
@@ -32,7 +76,7 @@ const cargarPerfil = async () => {
 
 cargarPerfil();
 
-// 5. Botón cerrar sesión
+// Botón cerrar sesión
 document.getElementById("btnCerrarSesion").addEventListener("click", () => {
     sessionStorage.removeItem("usuario");
     window.location.href = "./login.html";
