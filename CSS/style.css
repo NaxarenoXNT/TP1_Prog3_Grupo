@@ -387,6 +387,7 @@ label {
 /* Inputs generales */
 input, select, textarea {
     width: 100%;
+    box-sizing: border-box;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -394,6 +395,8 @@ input, select, textarea {
     font-size: 16px;
     background-color: #2a475e85;
     color: white;
+    max-height: 200px;
+    resize: vertical;
 }
 
 /* Placeholder */
@@ -589,6 +592,7 @@ button:hover {
     box-shadow: 10px 10px 5px #2a475e85;
 }
 
+/* Login */
 .login_body {
     background-image: url("../Assets/img/fondo_pagina.jpg");
     background-size: cover;
@@ -597,25 +601,92 @@ button:hover {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container_login {
-    margin: 32px;
-    padding: 12px;
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 40px;
     color: #f8f8fa;
     background-color: #1a61ac7e;
-    border-radius: 8px;
-    font-size: 20px;
-    box-shadow: 10px 10px 5px #2a475e85;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    font-size: 18px;
+    box-shadow: 0 0 20px #0000007a;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container_login h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.container_login label {
+    color: #c7d5e0;
+    font-size: 16px;
+    margin-bottom: 4px;
 }
 
 .input_login {
+    width: 100%;
+    box-sizing: border-box;
     background-color: #111927;
-    border: none;
-    border-radius: 12px;
-    padding: 25px;
+    border: 1px solid #4b7ba3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: white;
+    font-size: 16px;
+    margin-top: 4px;
 }
 
+.input_login:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+.button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2870bd;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.button:hover {
+    background-color: #1a61ac;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.login_registro_link {
+    text-align: center;
+    color: #c7d5e0;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.login_registro_link a {
+    color: #66c0f4;
+    text-decoration: none;
+}
+
+.login_registro_link a:hover {
+    text-decoration: underline;
+}
+
+/* Perfil */
 .perfil_body {
     background-image: url("../Assets/img/fondo_pagina.jpg");
     background-size: cover;
@@ -624,14 +695,152 @@ button:hover {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .perfil_container {
-    margin: 32px;
-    padding: 12px;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
     color: #f8f8fa;
     background-color: #1a61ac7e;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    font-size: 18px;
+    box-shadow: 0 0 20px #0000007a;
+}
+
+.perfil_titulo {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #66c0f4;
+    padding-bottom: 12px;
+}
+
+.perfil_datos p {
+    margin: 12px 0;
+    font-size: 18px;
+    color: #c7d5e0;
+}
+
+.perfil_datos span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.perfil_cerrar_sesion {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 12px;
+    background-color: #8b0000;
+    border: none;
     border-radius: 8px;
-    font-size: 20px;
-    box-shadow: 10px 10px 5px #2a475e85;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.perfil_cerrar_sesion:hover {
+    background-color: #b00000;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+/* Registro */
+.registro_body {
+    background-image: url("../Assets/img/fondo_pagina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro_form_wrapper {
+    max-width: 520px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #1a61ac7e;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0000007a;
+}
+
+.registro_form_title {
+    color: #f8f8fa;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.registro_form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.registro_label {
+    color: #c7d5e0;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.registro_input {
+    background-color: #111927;
+    border: 1px solid #4b7ba3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registro_input:focus {
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 5px #66c0f4;
+}
+
+.registro_button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2870bd;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.registro_button:hover {
+    background-color: #1a61ac;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.registro_login_link {
+    text-align: center;
+    color: #c7d5e0;
+    font-size: 15px;
+    margin-top: 14px;
+}
+
+.registro_login_link a {
+    color: #66c0f4;
+    text-decoration: none;
+}
+
+.registro_login_link a:hover {
+    text-decoration: underline;
 }
