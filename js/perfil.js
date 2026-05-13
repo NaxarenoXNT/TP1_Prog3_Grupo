@@ -20,8 +20,9 @@ const cargarPerfil = async () => {
         }
 
         // 4. Mostrar los datos en el HTML
-        document.getElementById("perfil_nombre").textContent = data.nombre;
+        document.getElementById("perfil_nombre").textContent = data.nombre + " " + data.apellido;
         document.getElementById("perfil_email").textContent = data.email;
+        document.getElementById("perfil_fecha_registro").textContent = data.fechaRegistro;
 
     } catch (error) {
         console.error("Error de red:", error);
