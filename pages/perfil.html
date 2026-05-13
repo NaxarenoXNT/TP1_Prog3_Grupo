@@ -25,20 +25,39 @@
                 <a href="./perfil.html">Perfil</a>
                 <a href="./login.html">Login</a>
                 <a href="./registro.html">Registro</a>
-            </nav>            
+            </nav>
         </div>
     </header>
 
     <main>
+
         <section class="perfil_container">
             <h1 class="perfil_titulo">Tu perfil</h1>
-            <div class="perfil_datos">
-                <p>Nombre completo: <span id="perfil_nombre"></span></p>
-                <p>Email: <span id="perfil_email"></span></p>
-                <p>Fecha de registro: <span id="perfil_fecha_registro"></span></p>
+
+            <div class="perfil_header">
+                <img id="perfil_foto" src="../Assets/img/perfil-placeholder.png" alt="Foto de perfil" class="perfil_foto">
+                <div class="perfil_datos">
+                    <p>Nombre: <span id="perfil_nombre"></span></p>
+                    <p>Email: <span id="perfil_email"></span></p>
+                    <p>Fecha de registro: <span id="perfil_fecha_registro"></span></p>
+                </div>
             </div>
+
             <button class="perfil_cerrar_sesion" id="btnCerrarSesion">Cerrar sesión</button>
         </section>
+
+        <section class="perfil_section">
+            <h2 class="perfil_section_titulo">Últimos pedidos</h2>
+            <ul id="perfil_pedidos" class="perfil_pedidos_lista">
+            </ul>
+        </section>
+
+        <section class="perfil_section">
+            <h2 class="perfil_section_titulo">Ofertas para vos</h2>
+            <div id="perfil_ofertas" class="perfil_ofertas_grid">
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer_style">
