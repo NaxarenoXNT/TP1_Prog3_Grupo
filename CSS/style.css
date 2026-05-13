@@ -387,6 +387,7 @@ label {
 /* Inputs generales */
 input, select, textarea {
     width: 100%;
+    box-sizing: border-box;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -394,6 +395,8 @@ input, select, textarea {
     font-size: 16px;
     background-color: #2a475e85;
     color: white;
+    max-height: 200px;
+    resize: vertical;
 }
 
 /* Placeholder */
