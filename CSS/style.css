@@ -844,3 +844,27 @@ button:hover {
 .registro_login_link a:hover {
     text-decoration: underline;
 }
+
+/* Foto + datos en fila */
+.perfil_header { display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem; }
+.perfil_foto { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+
+/* Sección genérica */
+.perfil_section { margin: 2rem auto; max-width: 800px; padding: 0 1rem; }
+.perfil_section_titulo { margin-bottom: 1rem; }
+
+/* Lista de pedidos */
+.perfil_pedidos_lista { list-style: none; padding: 0; display: flex; flex-direction: column; gap: .75rem; }
+.perfil_pedido_item { display: flex; justify-content: space-between; padding: .75rem 1rem; background: #1a1a2e; border-radius: 8px; }
+.perfil_sin_pedidos { color: #888; }
+
+/* Estado del pedido */
+.pedido_estado { font-size: .8rem; padding: .2rem .6rem; border-radius: 12px; }
+.pedido_estado--pendiente { background: #f59e0b22; color: #f59e0b; }
+.pedido_estado--completado { background: #10b98122; color: #10b981; }
+
+/* Grid de ofertas */
+.perfil_ofertas_grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; }
+.oferta_card { background: #1a1a2e; border-radius: 8px; padding: 1rem; text-align: center; }
+.oferta_categoria { font-size: .75rem; text-transform: uppercase; color: #888; }
+.oferta_nombre { margin-top: .5rem; font-weight: 600; }
