@@ -2,10 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Tienda virtual de videojuegos digitales, ofertas y servicios gamer"
-    />
+    <meta name="description" content="Tienda virtual de videojuegos digitales, ofertas y servicios gamer" />
     <title>Steam</title>
     <link rel="icon" href="./Assets/favicon/favicon.png" />
     <link rel="stylesheet" href="CSS/style.css" />
@@ -14,70 +11,69 @@
   <body class="body_index">
     <header>
       <div class="brand">
-        <a href="index.html"
-          ><img
-            src="./Assets/img/icono.png"
-            alt="Logo de Steam"
-            class="logo"
-        /></a>
+        <a href="index.html"><img src="./Assets/img/icono.png" alt="Logo de Steam" class="logo" /></a>
       </div>
       <div class="nav-links">
-            <nav>
-                <a href="./index.html">Inicio</a>
-                <a href="./pages/servicios.html">Servicios</a>
-                <a href="./pages/equipo.html">Equipo</a>
-                <a href="./pages/pedido.html">Realizar Pedido</a>
-                <a href="./pages/contacto.html">Contacto</a>
-                <a href="./pages/faq.html">FAQ</a>
-                <a href="./pages/perfil.html">Perfil</a>
-                <a href="./pages/login.html">Login</a>
-                <a href="./pages/registro.html">Registro</a>
-            </nav>
+        <nav>
+          <a href="./index.html">Inicio</a>
+          <a href="./pages/servicios.html">Servicios</a>
+          <a href="./pages/equipo.html">Equipo</a>
+          <a href="./pages/pedido.html">Realizar Pedido</a>
+          <a href="./pages/contacto.html">Contacto</a>
+          <a href="./pages/faq.html">FAQ</a>
+          <a href="./pages/perfil.html">Perfil</a>
+          <a href="./pages/login.html">Login</a>
+          <a href="./pages/registro.html">Registro</a>
+        </nav>
       </div>
     </header>
 
     <main class="main_index">
       <section class="intro_index">
         <h1>Bienvenido a Steam</h1>
-        <p>
-          Tu tienda digital de confianza para comprar videojuegos, descubrir
-          ofertas y acceder a servicios gamer.
-        </p>
+        <p>Tu tienda digital de confianza para comprar videojuegos, descubrir ofertas y acceder a servicios gamer.</p>
       </section>
 
       <section class="banner_index">
         <div class="banner-content_index">
           <h2>Ofertas de Temporada</h2>
           <p>Descubrí los mejores juegos al mejor precio</p>
-          <button class="banner-button_index">Ver Ofertas</button>
+          <button id="btnOfertas" class="banner-button_index">Ver Ofertas</button>
         </div>
       </section>
 
       <section class="categorias_index">
         <h2>Explorar por Categorías</h2>
         <div class="cards-container_index">
-          <div class="card_index">
+          <div class="card_index" data-categoria="acción">
             <img src="./Assets/img/accion.jpg" alt="Acción" />
             <h3>Acción</h3>
           </div>
-          <div class="card_index">
+          <div class="card_index" data-categoria="aventura">
             <img src="./Assets/img/aventura.jpg" alt="Aventura" />
             <h3>Aventura</h3>
           </div>
-          <div class="card_index">
+          <div class="card_index" data-categoria="deportes">
             <img src="./Assets/img/deportes.jpg" alt="Deportes" />
             <h3>Deportes</h3>
           </div>
-          <div class="card_index">
+          <div class="card_index" data-categoria="rpg">
             <img src="./Assets/img/rpg.jpg" alt="RPG" />
             <h3>RPG</h3>
           </div>
         </div>
+      </section>
+
+      <section id="seccionJuegos" class="juegos_section_index">
+        <h2 id="tituloJuegos"></h2>
+        <div id="listaJuegos" class="perfil_ofertas_grid"></div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

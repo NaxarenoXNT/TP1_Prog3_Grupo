@@ -162,6 +162,19 @@ footer {
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
+/* JUEGOS INDEX */
+.juegos_section_index {
+    display: none;
+    padding: 40px;
+    text-align: center;
+}
+
+.juegos_section_index h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+
 
 /* SERVICIOS */
 .servicios_html {
